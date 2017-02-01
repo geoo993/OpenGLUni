@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C7FDFC781E415EBC0075A732 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7FDFC771E415EBC0075A732 /* main.cpp */; };
 		C7FDFC821E415EDB0075A732 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FDFC7F1E415EDB0075A732 /* Cocoa.framework */; };
 		C7FDFC831E415EDB0075A732 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FDFC801E415EDB0075A732 /* GLUT.framework */; };
 		C7FDFC841E415EDB0075A732 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FDFC811E415EDB0075A732 /* OpenGL.framework */; };
@@ -33,8 +32,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C7F4358F1E426DBE00492EE0 /* shader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.frag; sourceTree = "<group>"; };
+		C7F435901E426DBE00492EE0 /* shader.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vert; sourceTree = "<group>"; };
 		C7FDFC741E415EBC0075A732 /* OpenGLUni */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLUni; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7FDFC771E415EBC0075A732 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C7FDFC7F1E415EDB0075A732 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C7FDFC801E415EDB0075A732 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		C7FDFC811E415EDB0075A732 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -68,6 +68,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C7F4358D1E426DBE00492EE0 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7F4358E1E426DBE00492EE0 /* shaders */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		C7F4358E1E426DBE00492EE0 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				C7F4358F1E426DBE00492EE0 /* shader.frag */,
+				C7F435901E426DBE00492EE0 /* shader.vert */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
 		C7FDFC6B1E415EBC0075A732 = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +105,7 @@
 		C7FDFC761E415EBC0075A732 /* OpenGLUni */ = {
 			isa = PBXGroup;
 			children = (
-				C7FDFC771E415EBC0075A732 /* main.cpp */,
+				C7F4358D1E426DBE00492EE0 /* resources */,
 			);
 			path = OpenGLUni;
 			sourceTree = "<group>";
@@ -167,7 +184,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7FDFC781E415EBC0075A732 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +322,7 @@
 				C7FDFC7D1E415EBC0075A732 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
