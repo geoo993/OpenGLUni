@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7F4359B1E426E6800492EE0 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F435941E426E6800492EE0 /* Game.cpp */; };
+		C7F4359C1E426E6800492EE0 /* GameWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F435961E426E6800492EE0 /* GameWindow.cpp */; };
+		C7F4359D1E426E6800492EE0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F435981E426E6800492EE0 /* main.cpp */; };
+		C7F4359E1E426E6800492EE0 /* Shaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F435991E426E6800492EE0 /* Shaders.cpp */; };
 		C7FDFC821E415EDB0075A732 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FDFC7F1E415EDB0075A732 /* Cocoa.framework */; };
-		C7FDFC831E415EDB0075A732 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FDFC801E415EDB0075A732 /* GLUT.framework */; };
 		C7FDFC841E415EDB0075A732 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FDFC811E415EDB0075A732 /* OpenGL.framework */; };
 		C7FDFC861E415FCE0075A732 /* libassimp.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FDFC851E415FCE0075A732 /* libassimp.3.0.0.dylib */; };
 		C7FDFC8A1E4160420075A732 /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FDFC871E4160420075A732 /* libGLEW.2.0.0.dylib */; };
@@ -34,6 +37,14 @@
 /* Begin PBXFileReference section */
 		C7F4358F1E426DBE00492EE0 /* shader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.frag; sourceTree = "<group>"; };
 		C7F435901E426DBE00492EE0 /* shader.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vert; sourceTree = "<group>"; };
+		C7F435931E426E6800492EE0 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		C7F435941E426E6800492EE0 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		C7F435951E426E6800492EE0 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		C7F435961E426E6800492EE0 /* GameWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWindow.cpp; sourceTree = "<group>"; };
+		C7F435971E426E6800492EE0 /* GameWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWindow.h; sourceTree = "<group>"; };
+		C7F435981E426E6800492EE0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C7F435991E426E6800492EE0 /* Shaders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shaders.cpp; sourceTree = "<group>"; };
+		C7F4359A1E426E6800492EE0 /* Shaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shaders.h; sourceTree = "<group>"; };
 		C7FDFC741E415EBC0075A732 /* OpenGLUni */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLUni; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FDFC7F1E415EDB0075A732 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C7FDFC801E415EDB0075A732 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
@@ -60,7 +71,6 @@
 				C7FDFC8C1E4160420075A732 /* libglib-2.0.0.dylib in Frameworks */,
 				C7FDFC861E415FCE0075A732 /* libassimp.3.0.0.dylib in Frameworks */,
 				C7FDFC821E415EDB0075A732 /* Cocoa.framework in Frameworks */,
-				C7FDFC831E415EDB0075A732 /* GLUT.framework in Frameworks */,
 				C7FDFC841E415EDB0075A732 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +115,14 @@
 		C7FDFC761E415EBC0075A732 /* OpenGLUni */ = {
 			isa = PBXGroup;
 			children = (
+				C7F435931E426E6800492EE0 /* Common.h */,
+				C7F435941E426E6800492EE0 /* Game.cpp */,
+				C7F435951E426E6800492EE0 /* Game.h */,
+				C7F435961E426E6800492EE0 /* GameWindow.cpp */,
+				C7F435971E426E6800492EE0 /* GameWindow.h */,
+				C7F435981E426E6800492EE0 /* main.cpp */,
+				C7F435991E426E6800492EE0 /* Shaders.cpp */,
+				C7F4359A1E426E6800492EE0 /* Shaders.h */,
 				C7F4358D1E426DBE00492EE0 /* resources */,
 			);
 			path = OpenGLUni;
@@ -184,6 +202,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F4359B1E426E6800492EE0 /* Game.cpp in Sources */,
+				C7F4359C1E426E6800492EE0 /* GameWindow.cpp in Sources */,
+				C7F4359E1E426E6800492EE0 /* Shaders.cpp in Sources */,
+				C7F4359D1E426E6800492EE0 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
