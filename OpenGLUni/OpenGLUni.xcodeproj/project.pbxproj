@@ -11,6 +11,10 @@
 		C7F4359C1E426E6800492EE0 /* GameWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F435961E426E6800492EE0 /* GameWindow.cpp */; };
 		C7F4359D1E426E6800492EE0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F435981E426E6800492EE0 /* main.cpp */; };
 		C7F4359E1E426E6800492EE0 /* Shaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F435991E426E6800492EE0 /* Shaders.cpp */; };
+		C7F435A31E42723A00492EE0 /* MatrixStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F435A11E42723A00492EE0 /* MatrixStack.cpp */; };
+		C7F435AA1E4273B200492EE0 /* Sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F435A41E4273B200492EE0 /* Sphere.cpp */; };
+		C7F435AB1E4273B200492EE0 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F435A61E4273B200492EE0 /* Texture.cpp */; };
+		C7F435AC1E4273B200492EE0 /* VertexBufferObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7F435A81E4273B200492EE0 /* VertexBufferObject.cpp */; };
 		C7FDFC821E415EDB0075A732 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FDFC7F1E415EDB0075A732 /* Cocoa.framework */; };
 		C7FDFC841E415EDB0075A732 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FDFC811E415EDB0075A732 /* OpenGL.framework */; };
 		C7FDFC861E415FCE0075A732 /* libassimp.3.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FDFC851E415FCE0075A732 /* libassimp.3.0.0.dylib */; };
@@ -45,6 +49,17 @@
 		C7F435981E426E6800492EE0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C7F435991E426E6800492EE0 /* Shaders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shaders.cpp; sourceTree = "<group>"; };
 		C7F4359A1E426E6800492EE0 /* Shaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shaders.h; sourceTree = "<group>"; };
+		C7F435A01E42706200492EE0 /* dirtpile01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dirtpile01.jpg; sourceTree = "<group>"; };
+		C7F435A11E42723A00492EE0 /* MatrixStack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MatrixStack.cpp; sourceTree = "<group>"; };
+		C7F435A21E42723A00492EE0 /* MatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixStack.h; sourceTree = "<group>"; };
+		C7F435A41E4273B200492EE0 /* Sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sphere.cpp; sourceTree = "<group>"; };
+		C7F435A51E4273B200492EE0 /* Sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sphere.h; sourceTree = "<group>"; };
+		C7F435A61E4273B200492EE0 /* Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
+		C7F435A71E4273B200492EE0 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture.h; sourceTree = "<group>"; };
+		C7F435A81E4273B200492EE0 /* VertexBufferObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VertexBufferObject.cpp; sourceTree = "<group>"; };
+		C7F435A91E4273B200492EE0 /* VertexBufferObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexBufferObject.h; sourceTree = "<group>"; };
+		C7F435AD1E428AB900492EE0 /* shader2.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader2.frag; sourceTree = "<group>"; };
+		C7F435AE1E428AB900492EE0 /* shader2.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader2.vert; sourceTree = "<group>"; };
 		C7FDFC741E415EBC0075A732 /* OpenGLUni */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLUni; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FDFC7F1E415EDB0075A732 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C7FDFC801E415EDB0075A732 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
@@ -81,6 +96,7 @@
 		C7F4358D1E426DBE00492EE0 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				C7F4359F1E42706200492EE0 /* textures */,
 				C7F4358E1E426DBE00492EE0 /* shaders */,
 			);
 			path = resources;
@@ -89,10 +105,20 @@
 		C7F4358E1E426DBE00492EE0 /* shaders */ = {
 			isa = PBXGroup;
 			children = (
+				C7F435AD1E428AB900492EE0 /* shader2.frag */,
+				C7F435AE1E428AB900492EE0 /* shader2.vert */,
 				C7F4358F1E426DBE00492EE0 /* shader.frag */,
 				C7F435901E426DBE00492EE0 /* shader.vert */,
 			);
 			path = shaders;
+			sourceTree = "<group>";
+		};
+		C7F4359F1E42706200492EE0 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				C7F435A01E42706200492EE0 /* dirtpile01.jpg */,
+			);
+			path = textures;
 			sourceTree = "<group>";
 		};
 		C7FDFC6B1E415EBC0075A732 = {
@@ -115,6 +141,14 @@
 		C7FDFC761E415EBC0075A732 /* OpenGLUni */ = {
 			isa = PBXGroup;
 			children = (
+				C7F435A41E4273B200492EE0 /* Sphere.cpp */,
+				C7F435A51E4273B200492EE0 /* Sphere.h */,
+				C7F435A61E4273B200492EE0 /* Texture.cpp */,
+				C7F435A71E4273B200492EE0 /* Texture.h */,
+				C7F435A81E4273B200492EE0 /* VertexBufferObject.cpp */,
+				C7F435A91E4273B200492EE0 /* VertexBufferObject.h */,
+				C7F435A11E42723A00492EE0 /* MatrixStack.cpp */,
+				C7F435A21E42723A00492EE0 /* MatrixStack.h */,
 				C7F435931E426E6800492EE0 /* Common.h */,
 				C7F435941E426E6800492EE0 /* Game.cpp */,
 				C7F435951E426E6800492EE0 /* Game.h */,
@@ -203,9 +237,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F4359B1E426E6800492EE0 /* Game.cpp in Sources */,
+				C7F435AB1E4273B200492EE0 /* Texture.cpp in Sources */,
 				C7F4359C1E426E6800492EE0 /* GameWindow.cpp in Sources */,
 				C7F4359E1E426E6800492EE0 /* Shaders.cpp in Sources */,
 				C7F4359D1E426E6800492EE0 /* main.cpp in Sources */,
+				C7F435AA1E4273B200492EE0 /* Sphere.cpp in Sources */,
+				C7F435AC1E4273B200492EE0 /* VertexBufferObject.cpp in Sources */,
+				C7F435A31E42723A00492EE0 /* MatrixStack.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

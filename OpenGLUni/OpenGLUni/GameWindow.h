@@ -16,7 +16,6 @@ class GameWindow {
     
 public:
     
-    static GameWindow& GetInstance();
     GameWindow();
     GameWindow(std::string name, int w, int h);
     

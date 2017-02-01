@@ -15,13 +15,17 @@
 //#include <OpenGL/OpenGL.h>
 //#include <OpenGL/gl3.h>
 
+#include <iostream>
 #include <MacTypes.h>
 #include <ctime>
-#include <iostream>
-
+#include <algorithm>
+#include <cmath>
 #include <cstring>
 #include <vector>
 #include <sstream>
+#include <queue>
+#include <map>
+#include <set>
 
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -33,17 +37,13 @@
 
 #include "GLFW/glfw3.h"
 
-//GLM
-//#include <glm/glm.hpp>
+#include <glm/glm.hpp>
 
-//Freestyle
 //#include <freetype2/freetype/freetype.h>
 
-//FreeImage
-//#include <FreeImage.h>
+#include <FreeImage.h>
 
-//Assimp
-//#include <assimp/scene.h>
+#include <assimp/scene.h>
 
 #include <stdlib.h>
 #include <stdio.h>

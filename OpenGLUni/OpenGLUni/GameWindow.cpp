@@ -25,13 +25,6 @@ GameWindow &GameWindow::operator=(const GameWindow &other){
     return *this;
 }
 
-GameWindow& GameWindow::GetInstance() 
-{
-    static GameWindow instance;
-    
-    return instance;
-}
-
 GameWindow::GameWindow() : m_sAppName("OpenGL Window"), m_width(600), m_height(400), m_bFullscreen(false) 
 {
 }

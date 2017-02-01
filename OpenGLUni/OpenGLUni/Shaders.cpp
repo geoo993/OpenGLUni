@@ -25,7 +25,7 @@ bool CShader::LoadShader(string sFile, int iType)
 	
 	m_uiShader = glCreateShader(iType);
 
-	glShaderSource(m_uiShader, (int)sLines.size(), sProgram, NULL);
+	glShaderSource(m_uiShader, (int)sLines.size(), sProgram, nullptr);
 	glCompileShader(m_uiShader);
 
 	delete[] sProgram;
@@ -35,6 +35,12 @@ bool CShader::LoadShader(string sFile, int iType)
 
 	if(iCompilationStatus == GL_FALSE)
 	{
+//        char sInfoLog[1024];
+//        char sFinalMessage[1536];
+//        int iLogLength;
+//        glGetShaderInfoLog(m_uiShader, 1024, &iLogLength, sInfoLog);
+//        sprintf(sFinalMessage, "Error! Shader file wasn't compiled! The compiler returned:\n\n%s", sInfoLog);
+        
 		char sInfoLog[1024];
 		char sFinalMessage[1536];
 		int iLogLength;
@@ -50,7 +56,7 @@ bool CShader::LoadShader(string sFile, int iType)
 			sprintf(sShaderType, "unknown shader type");
 
 		sprintf(sFinalMessage, "Error in %s!\n%s\nShader file not compiled.  The compiler returned:\n\n%s", sShaderType, sFile.c_str(), sInfoLog);
-
+        
 		return false;
 	}
 	m_iType = iType;
@@ -63,7 +69,7 @@ bool CShader::LoadShader(string sFile, int iType)
 // Loads a file into a vector of strings (vResult)
 bool CShader::GetLinesFromFile(string sFile, bool bIncludePart, vector<string>* vResult)
 {
-	FILE* fp = fopen(sFile.c_str(),"rb");
+	FILE* fp = fopen(sFile.c_str(),"rt");
     if (!fp){printf("Image could not be opened\n"); return false;}
     
 	string sDirectory;
