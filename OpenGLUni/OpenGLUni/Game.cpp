@@ -10,7 +10,7 @@
 #include "Game.h"
 
 // Constructor
-Game::Game(): m_pShaderProgram(nullptr), m_uiVAO(0), m_rotY(0.0f)
+Game::Game(): m_pShaderProgram(nullptr), m_uiVAO(0), m_rotY(0.0f), m_dt(0.0f)
 {
     
 }
@@ -146,7 +146,8 @@ void Game::addShadersFromResources(std::string path, glm::mat4 &m_viewMatrix,
 
 void Game::Update(){
     
-    //m_rotY += 100.0f * m_dt;
+    m_rotY += 100.0f * m_dt;
+    
 }
 
 
@@ -163,6 +164,7 @@ void Game::Render()
     // Set the modeling matrix
     //*m_pModelMatrix = glm::translate(glm::mat4(1), glm::vec3(0, 0, 0));
     *m_pModelMatrix = glm::mat4(1);
+    *m_pModelMatrix = glm::rotate(*m_pModelMatrix, m_rotY, glm::vec3(0, 0.1, 0));
     m_pShaderProgram->SetUniform("modelMatrix", m_pModelMatrix);
     
     //render sphere
@@ -233,7 +235,6 @@ void Game::Execute()
     //drawTriangle(filepath);//draw triangle from lab 1
     
     drawSphere(filepath);//sphere from lab 2
-    
     
     
     keyCode = -1;

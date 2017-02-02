@@ -62,7 +62,6 @@
 		C7F435AE1E428AB900492EE0 /* shader2.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader2.vert; sourceTree = "<group>"; };
 		C7FDFC741E415EBC0075A732 /* OpenGLUni */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLUni; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FDFC7F1E415EDB0075A732 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		C7FDFC801E415EDB0075A732 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		C7FDFC811E415EDB0075A732 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		C7FDFC851E415FCE0075A732 /* libassimp.3.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.3.0.0.dylib; path = ../../../../../../opt/local/lib/libassimp.3.0.0.dylib; sourceTree = "<group>"; };
 		C7FDFC871E4160420075A732 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../../../../opt/local/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
@@ -173,7 +172,6 @@
 				C7FDFC891E4160420075A732 /* libglib-2.0.0.dylib */,
 				C7FDFC851E415FCE0075A732 /* libassimp.3.0.0.dylib */,
 				C7FDFC7F1E415EDB0075A732 /* Cocoa.framework */,
-				C7FDFC801E415EDB0075A732 /* GLUT.framework */,
 				C7FDFC811E415EDB0075A732 /* OpenGL.framework */,
 			);
 			name = Frameworks;
